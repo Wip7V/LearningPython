@@ -16,12 +16,12 @@ class Alumno:
     def getDatos(self):
         aprobado: str = " y está suspendido"
         if(self.esAprobado()):
-            aprovado = " y está aprobado"
+            aprobado = " y está aprobado"
             
         return "Alumno " + self.nombre + " con la nota " + str(self.nota) + aprobado
 
 
 
-alumno = Alumno("Juanjo",6)
+alumno = Alumno("Juanjo",3)
 print(alumno.getDatos())
  
