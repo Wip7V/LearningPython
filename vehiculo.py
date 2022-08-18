@@ -9,7 +9,7 @@ class Vehiculo():
         self.ruedas = ruedas
         self.puertas = puertas
     
-    def getDatos(self):
+    def getDatos(self) -> str:
         return "Color: "+self.color+ " Ruedas: "+str(self.ruedas)+" Puertas: "+str(self.puertas)
     
 
