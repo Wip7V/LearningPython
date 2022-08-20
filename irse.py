@@ -11,6 +11,6 @@ salida = datetime(year, month, day, 19, 00, 00)
 if(ahora > salida):
     print("Ya es hora de irse")
 else:
-    dif = salida - ahora
-    print("Aún faltan: ", str(dif).split(".")[0])
+    dif = str(salida - ahora).split(".")[0]
+    print("Aún faltan: ", dif)
 
