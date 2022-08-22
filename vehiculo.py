@@ -1,6 +1,6 @@
 
 class Vehiculo():
-    color: int
+    color: str
     ruedas: int
     pertas: int
 
