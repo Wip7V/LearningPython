@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Listado Directores</title>{% endblock %}
+
+{% block content %}
+<h3>Filmography</h3>
+
+<ul>
+    {% for director in object_list %}
+        <li><a href="director/{{ director.id }}">{{ director }}</a></li>
+    {% empty %}
+        <li>No hay Directores</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

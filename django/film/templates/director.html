@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>{{ director }}</title>{% endblock %}
+
+{% block content %}
+<h3>{{ director }}</h3>
+<img src="{{ director.image }}" height="300"><br>
+Fecha de nacimiento: {{ director.day_of_birth }}<br>
+Fecha de defunción: {{ director.day_of_death }}<br>
+
+<br>
+<strong>Peliculas</strong><br>
+<ul>
+    {% for film in director.film_set.all %}
+        <li><a href="../film/{{ film.id }}">{{ film }}</a></li>
+    {% empty %}
+        <li>No hay Peliculas</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

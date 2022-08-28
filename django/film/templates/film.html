@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>{{ film }}</title>{% endblock %}
+
+{% block content %}
+<h3>{{ film }}</h3>
+<img src="{{ film.image }}" alt="{{ film }}" height="100"><br>
+Fecha de estreno: {{ film.release_date }}<br>
+<p>{{ film.description | linebreaks }}</p>
+
+
+{% endblock %}
